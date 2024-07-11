@@ -5,52 +5,89 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> CAFE SMIDA </title>
-		
 		<style>
-			.font-1 {
-					color: #DACE9D
-					}
+			.Navbar {
+					margin: 0%;
+					padding-top: 10px ;
+					padding-bottom: 10px;
+					padding-left:10px;
+					border: 5px;
+    				overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+    				background-color: rgb(123, 120, 120); /* This colors the navbar black */
+    				position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    				top: 0; /* This ensures no space is displayed above the navbar */
+    				width: 100%; /* This makes the navbar span the entire width of the page */
+    				z-index: 1; /* This ensures other elements don't display over the navbar */
+    		}
+			section h1 {
+				margin-top: 60px;
+				margin-left:5px;
+			}
+			h1 {
+				color: #DACE9D;
+
+			}
 			.font-2 {
-					color: grey; font-size: 15px; text-align: center;
-					}
+					color: rgb(251, 251, 251); font-size: 15px; text-align: center;
+			}
 			.font-3 {
 					color: white; font-size:25px; font-style: italic; text-align: center;
-						}
+			}
 			* {
 			  box-sizing: border-box;
 			}
 
 			.column {
-			  float: left;
-			  width: 33.33%;
-			  padding: 5px;
+			  		float: left;
+			 	    width: 33.33%;
+			        padding: 5px;
+			        position:relative;
+			}
+			
+			html {
+			  	height: 100%;
+			  	margin: 0%;
 			}
 
-			/* Clearfix (clear floats) */
-			.row::after {
-			  content: "";
-			  clear: both;
-			  display: table;
+			body {	
+				 margin: 0;
+  				 background-color:rgb(35, 1, 1);
 			}
-			body, html {
-			  height: 100%;
-			  margin: 0;
+			
+			footer {
+				padding: 2%;
+				background-color:rgb(123, 120, 120);
 			}
-
 		</style>
 	</head>
+
 	<body>
+	<!--Nav-->
+	<div class="Navbar">
+		<a class="active" href="#Home">HOME</a> <!--active/ select and style the active link-->
+		<a href="#Menu">MENU</a>
+		<a href="#Contact">CONTACT</a>
+		<a href="#Tutorial">TUTORIAL</a>
+	</div>
+	<!--End Nav-->	
 	<!--Home-->
-	<div class="bg"></div>
-		<body background="C:\Users\Admin\Documents\One-Page_Website\image_CAFE_SMIDA\smida5.png">
-	
-		<h1 class="font-1"> CAFE SMIDA </h1>
+	<div class="background-image"></div>
+
+		<section>
+			<h1> CAFE SMIDA</h1>
+		</section>
+		
 		<br>
 		<br>
 		<br>
-		<span class="font-3"><center>"As long as there was coffee in the world,<br> how bad could things be?"
-		<br>- Cassandra Clare</center>
-		<br>
+		<span class="font-3">
+			<center>
+				<q>As long as there was coffee in the world,
+				<br> how bad could things be?
+				</q>
+				<br>
+				<br>- Cassandra Clare
+			</center>
 		<br>
 		<br>
 		<br>
@@ -59,66 +96,55 @@
 		<section>
 		<div class="row">
 			<div class="column">
-				<img src="C:\Users\Admin\Documents\One-Page_Website\image_CAFE_SMIDA\CAFE_SMIDA_1.png" style="width:100%">
+				<img src="image_CAFE_SMIDA\smida4.png" style="width:100%">
 			</div>
 			<div class="column">
-				<img src="C:\Users\Admin\Documents\One-Page_Website\image_CAFE_SMIDA\smida4.png" style="width:100%">
+				<center>
+				<video autoplay muted loop id="Roasting" width="125%">
+					<source src="image_CAFE_SMIDA\Roasting.mp4" type="video/mp4" >
+					<!--Dispaly message if video fails to run-->
+					Your browser does not support HTML5 video.
+				</video>
+				</center>
 			</div>
 			<div class="column">
-				<img src="C:\Users\Admin\Documents\One-Page_Website\image_CAFE_SMIDA\CAFE_SMIDA_1.png" style="width:100%">
+				<img src="image_CAFE_SMIDA\smida4.png" style="width:100%">
 			</div>
-			<div id="tutorial">
-				<iframe width="150" height="133" src="https://www.youtube.com/embed/qSdGXdIfpoY?si=a3Gm6hdqWsJ6eL2W" title="YouTube video player" 
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		    </div>
+			
+		</div>
 		</section>
-		</p>
 		
 		<div id="contact">
-				<p class="font-2">
-					 <span style= "color: grey"><b>Free Voucher Drawer</b><br>Please provide contact information  .</span>
-				</p>
+			<p class="font-2">
+				<span style= "color: grey"><b>Free Voucher Drawer</b><br>Please provide contact information  .</span>
+			</p>
 				
 				
-					<form style="text-align: center;" action="" method="post">
-						<input type="text" type="brown"  value="First_Name">
-						<input type="text" value="Last_Name"><br>
-						<input type="text" value="Email Address">
-						<input type="text" value="Phone Number"><br>
-						<br>
-						<br>
-						<input type="submit" value="Submit">
-					</form>
+			<form style="text-align: center;" action="" method="post">
+				<input type="text" type="brown"  value="First_Name">
+				<input type="text" value="Last_Name"><br>
+				<input type="text" value="Email Address">
+				<input type="text" value="Phone Number"><br>
+				<br>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
 		</div>
-	</section>
-	<!--END OF CONTACT-->
-		
-		
-				<br>
-				<br>
-				<br>
-				<br>
-		</p>
-	<!--Nav-->
-		
-		<ul>
-			<a href="#home" id="link"><li>HOME </li></a>
-			<a href="#menu" id="link"><li>MENU </li></a>
-			<a href="#contact" id="link"><li>CONTACT</li></a>
-			<a href="#tutorial" id="link"><li>HOME ROASTING TUTORIAL</li></a>
-		</ul>
-		
-	<section>
-	<!--End of Nav-->
+		<!--End of Contact-->
+		    <br>
+			<br>
+			<br>
+			<br>
 		<p class="font-2">
-			<label class="terms">Terms and Condition</label>
+			<label class="terms">Terms and Conditions</label>
 		</p>
 	<!--Footer-->
-		<footer style="color:grey;">www.smida.com &nbsp; &copy;2023</footer>
+		<footer style="color:#DACE9D;">www.smida.com &nbsp; &copy;2023</footer>
     <!--End of Footer-->
 	</body>
 </html>
 	
+
 
 	
 		
